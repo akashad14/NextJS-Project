@@ -130,22 +130,22 @@ const ValuesSection: React.FC = () => {
     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
       Our Values
     </h2>
-    <p className="text-gray-600 text-base md:text-lg lg:text-xl mb-8 md:mb-12">
+    <p className="text-black text-medium md:text-lg lg:text-2xl mb-8 md:mb-12">
       At Everything Talent, our core values drive everything we do
     </p>
     
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-[5rem] items-center">
       
-      <div className="flex flex-col items-center md:items-end md:text-right space-y-8 md:space-y-10">
+      <div className="flex flex-col items-center md:items-end  space-y-8 md:space-y-10">
         
         <div>
           <div className="flex items-center justify-center">
             <div className="text-blue-500 mr-2 text-2xl" />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-medium">
             Innovation
             </h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center opacity-80">
           We are committed to continuously improving our technology to meet the evolving needs of our users
           and stay ahead of industry trends.
           </p>
@@ -154,11 +154,11 @@ const ValuesSection: React.FC = () => {
         <div>
           <div className="flex items-center justify-center">
             <div className="text-blue-500 mr-2 text-2xl" />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-medium">
             Simplicity
             </h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 opacity-80">
           We believe that great technology should be intuitive and easy to use. Our solutions are designed 
           to streamline your hiring process without unnecessary complexity.
           </p>
@@ -171,50 +171,50 @@ const ValuesSection: React.FC = () => {
         <div className="text-center mb-4 md:mb-6">
           <div className="flex items-center justify-center">
             <div className="text-blue-500 mr-2 text-2xl" />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h3 className="text-xl md:text-2xl lg:text-2xl mb-5 font-medium">
             Customer Success
             </h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center opacity-80">
           Your success is our success. We are devoted to providing exceptional support and resources to 
           help you achieve your hiring goals.
           </p>
         </div>
         
         {/* Center Image */}
-        <div className="flex justify-center mb-4 md:mb-6">
+        <div className="flex justify-center  mb-4 md:mb-6">
           <img
             src="/image/img1.webp" 
             alt="Central Illustration"
-            className="rounded-lg shadow-lg object-cover w-40 h-40 sm:w-48 sm:h-48 md:w-[26rem] md:h-[40rem]"
+            className="rounded-lg shadow-lg object-cover w-40 h-40 sm:w-48 sm:h-48 md:w-[30rem] md:h-[42rem]"
           />
         </div>
 
         <div className="text-center mt-4 md:mt-6">
           <div className="flex items-center justify-center">
             <div className="text-blue-500 mr-2 text-2xl" />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-medium ">
             Security
             </h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center opacity-80">
           We prioritize the protection of your data with robust security measures. Our systems are designed to safeguard 
           your information and ensure privacy, giving you peace of mind.
           </p>
         </div>
       </div>
       
-      <div className="flex flex-col items-center md:items-start md:text-left space-y-8 md:space-y-10">
+      <div className="flex flex-col items-center md:items-start space-y-8 md:space-y-10">
         
         {/* First Title-Description Pair */}
         <div>
           <div className="flex items-center justify-center">
             <div className="text-blue-500 mr-2 text-2xl" />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-medium">
             Transparency
             </h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center opacity-80">
           We value open and honest communication, both within our team and with our users. We’re dedicated 
           to building trust through clarity and integrity.
           </p>
@@ -224,11 +224,11 @@ const ValuesSection: React.FC = () => {
         <div>
           <div className="flex items-center justify-center">
             <div className="text-blue-500 mr-2 text-2xl" />
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            <h3 className="text-2xl md:text-2xl lg:text-3xl font-medium">
             Inclusivity
             </h3>
           </div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0 justify-center">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg max-w-md mx-auto px-4 sm:px-0  opacity-80">
           We are committed to fostering a diverse and inclusive hiring environment. By eliminating biases 
           and ensuring fairness, we empower every candidate to present their unique strengths and capabilities.
           </p>
