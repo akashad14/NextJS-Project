@@ -310,6 +310,7 @@ const Team: React.FC = () => {
     </div>
   );
 };
+
 // Expert team end
 
 // Journey Section start
@@ -397,7 +398,7 @@ const JourneySection = () => {
                   </div>
                 </div>
               </div>
-              {/* 2 */}
+
 
               <div className="relative -mt-20 flex justify-end w-1/2 flex-col self-end">
                 {/* <!-- Sticky label for each event --> */}
@@ -641,13 +642,14 @@ const SkylineFooter: React.FC = () => {
 // Footer section End
  
 // Main Home Component
-export default function Home() {
+export default function Home ()
+
+ {
   return (
     <main>
       <HeroSection />
       <StorySection />
       <ValuesSection/>
-      <teamMembers/>
       <Team/>
       <JourneySection/>
       <Footer/>
