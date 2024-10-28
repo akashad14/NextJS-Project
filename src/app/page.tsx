@@ -199,8 +199,8 @@ const ValuesSection: React.FC = () => {
           <img
           src="/image/img1.webp"
           alt="Central Illustration"
-           className="rounded-2xl shadow-lg object-cover w-80 h-40 sm:w-96 sm:h-48 md:w-[50rem] md:h-[42rem]"
-            />
+          className="rounded-2xl shadow-lg object-cover w-full sm:w-80 h-auto md:w-[30rem] lg:w-[40rem] xl:w-[50rem] lg:h-[35rem] xl:h-[40rem]"
+          />
             </div>
 
         
@@ -313,6 +313,28 @@ const Team: React.FC = () => {
 
 // Expert team end
 
+  const CulturePage: React.FC = () => {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 w-full max-w-3xl md:max-w-2xl lg:max-w-4xl">
+        <h2 className="text-2xl font-bold mb-2 text-gray-800">Our Culture</h2>
+        <p className="text-gray-500 mb-4 md:mb-6">
+            We foster a collaborative and inclusive environment where innovation thrives, professional growth is supported, and every team member is valued.
+        </p>
+        <p className="text-gray-800 mb-3 md:mb-4">
+            Everything Talent is built on the principles of collaboration, respect, and continuous growth. We are a team of dedicated professionals passionate about improving the hiring experience for both employers and candidates. Our culture fosters creativity, encourages learning, and supports each individual’s development.
+        </p>
+        <p className="text-gray-800 mb-4 md:mb-6">
+            We are driven by a shared commitment to making a positive impact on the world of recruitment. As we grow, we remain focused on delivering solutions that are not only effective but also aligned with our core values. We invite you to join us on this journey and experience the difference our platform can make in your hiring process.
+        </p>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Contact Us
+        </button>
+    </div>
+</div>
+  );
+};
+
 // Journey Section start
 
 
@@ -385,14 +407,7 @@ const JourneySection = () => {
                     </div>
                     <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
                       IDC Names Arctic Wolf a Leader
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                      >
-                        <path d="M3.33946 "></path>
-                        <path d="2.58277"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
                       </svg>
                     </h3>
                   </div>
@@ -428,12 +443,8 @@ const JourneySection = () => {
                     </div>
                     <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
                       Arctic Wolf Incident Launch
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                      ></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                      </svg>
                     </h3>
                   </div>
                 </div>
@@ -468,18 +479,8 @@ const JourneySection = () => {
                     </div>
                     <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
                       Arctic Wolf Expands to ANZ
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-white dark:text-sky-500"
-                      ></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                      </svg>
                     </h3>
                   </div>
                 </div>
@@ -515,12 +516,8 @@ const JourneySection = () => {
                     </div>
                     <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
                       Arctic Wolf on CNBC Disruptor 50
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                      ></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path>
+                      </svg>
                     </h3>
                   </div>
                 </div>
@@ -544,57 +541,59 @@ const JourneySection = () => {
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-10 px-6">
-    <div className="max-w-7xl mx-auto flex-cols-3 lg:flex-cols-3 gap-8">
+    <div className="max-w-7xl mx-auto">
       
       {/* Logo Section */}
-      <div className="md:col-span-1 flex flex-col items-start space-y-4">
-          <img src="/image/logo-dark.webp" alt="Logo" className="w-[10rem] h-[10rem" />
-          <h2 className="text-4xl font-semibold">Everything Talent</h2>
-          
-        </div>
-        
-        <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
-          {/* Resources */}
-          <div className="flex flex-col space-y-5">
-          <p className="text-white font-semibold mt-4">RESOURCES</p>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Blogs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Success Stories</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Case Studies</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Whitepapers</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">FAQs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Hiring Guides</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Support</a></li>
-            </ul>
-          </div>
-
-          {/* Get Started */}
-          <div className="pt-5 space-y-5">
-            <p className="text-white font-semibold">Get Started</p>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Pricing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Hiring Solutions</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Funded Startups</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Free Trial</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Contact Support</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Request Demo</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Trust</a></li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div className="pt-5 space-y-5">
-            <p className="text-white font-semibold">Legal</p>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-gray-100">CCPA Compliance</a></li>
-            </ul>
-          </div>
-        </div>
+      <div className="flex flex-col items-start space-y-4 mb-8">
+        <img src="/image/logo-dark.webp" alt="Logo" className="w-[10rem] h-[10rem]" />
+        <h2 className="text-4xl font-semibold">Everything Talent</h2>
       </div>
-    </footer>
+
+      {/* Links Section */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8">
+        
+        {/* Resources */}
+        <div className="flex flex-col space-y-5">
+          <p className="text-white font-semibold">Resources</p>
+          <ul className="space-y-4">
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Blogs</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Success Stories</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Case Studies</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Whitepapers</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">FAQs</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Hiring Guides</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Support</a></li>
+          </ul>
+        </div>
+
+        {/* Get Started */}
+        <div className="flex flex-col space-y-5">
+          <p className="text-white font-semibold">Get Started</p>
+          <ul className="space-y-4">
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Pricing</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Hiring Solutions</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Funded Startups</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Free Trial</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Contact Support</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Request Demo</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Trust</a></li>
+          </ul>
+        </div>
+
+        {/* Legal */}
+        <div className="flex flex-col space-y-5">
+          <p className="text-white font-semibold">Legal</p>
+          <ul className="space-y-4">
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Privacy Policy</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Terms of Service</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">Cookie Policy</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-gray-100">CCPA Compliance</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
   );
 };
 
@@ -651,6 +650,7 @@ export default function Home ()
       <StorySection />
       <ValuesSection/>
       <Team/>
+      <CulturePage/>
       <JourneySection/>
       <Footer/>
       <SkylineFooter/>
