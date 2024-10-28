@@ -4,34 +4,30 @@ import React from 'react';
 // Hero Section Component
 const HeroSection: React.FC = () => {
   return (
-    <section className="container mx-auto px-5 py-20 min-h-screen bg-white flex flex-col md:flex-row items-center gap-20">
-      
-      <div className="text-left max-w-4xl mx-auto pl-10 pb-10">
-        <h2 className=" text-lg md:text-7xl font-bold leading-tight bg-gradient-to-r from-black via-blue-800 to-blue-600 text-transparent bg-clip-text ">
-          Everything Talent simplifies hiring with a free ATS and AI-driven assessments.
-        </h2>
+    <div>
+    <section className="flex flex-col md:flex-row items-center justify-around py-20 mt-2">
+      <div className="md:w-1/2 space-y-4">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-black to-[#3c3cbf] dark:from-[#3c3cbf] dark:to-white font-bold text-[2.2rem] lg:text-7xl md:mr-12 md:mt-0 text-center md:w-full mt-12 md:text-left">
+          Everything Talent simplifies hiring with a free ATS and AI-driven
+          assessments.
+        </p>
       </div>
-      
-
-      {/* Images Section */}
-      <div className="md:w-1/2 flex justify-center relative space-x-8 py-8">
-      <div className="transform rotate-45 w-48 h-48 md:w-64 md:h-64 bg-cover bg-center overflow-hidden rounded-lg border-2 border-white shadow-md absolute top-[-15rem] left-0">
-    <img 
-      src="/image/about1.webp"
-      alt="Workspace" 
-      className="w-full h-full object-cover"
-    />
-  </div>
-  
-  <div className="transform rotate-45 w-48 h-48 md:w-64 md:h-64 bg-cover bg-center overflow-hidden rounded-lg border-2 border-white shadow-md absolute top-[-5rem] left-0">
-    <img 
-      src="/image/about2.webp"
-      alt="Person using laptop" 
-      className="w-full h-full object-cover"
-    />
-    </div>
-    </div>
+      <div className="  mt-2 md:mt-10 ">
+        <img
+          src="/image/about1.webp" // Replace with the actual image URL
+          alt="Workspace"
+          className=" rotate-45 size-52 md:size-80 object-cover "
+        />
+        <div className="top-60 ">
+          <img
+            src="/image/about2.webp" // Replace with the actual image URL
+            alt="Workspace"
+            className=" rotate-45 size-52 md:size-80 object-cover "
+          />
+        </div>
+      </div>
     </section>
+  </div>
     );
   };
 
@@ -39,76 +35,79 @@ const HeroSection: React.FC = () => {
 const StorySection: React.FC = () => {
   return (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-gray-50">
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <h2 className="text-3xl sm:text-4xl font-bold text-black mb-6">Our Story</h2>
-        <p className="text-base sm:text-lg md:text-xl font-normal text-gray-600 mt-6 mb-10">
-          We not only make the world’s most comfortable hammocks, but through training and sustainable job creation, 
-          we empower our weavers and their families to break the cycle of poverty and build a brighter future.
+    <div className="text-center max-w-3xl mx-auto space-y-4">
+      <h2 className="text-3xl sm:text-4xl font-bold text-black mb-6">Our Story</h2>
+      <p className="text-base sm:text-lg md:text-xl font-normal text-gray-600 mt-6 mb-10">
+        We not only make the world’s most comfortable hammocks, but through training and sustainable job creation, 
+        we empower our weavers and their families to break the cycle of poverty and build a brighter future.
+      </p>
+    </div>
+  
+    {/* Section 1 */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10">
+      <div className="max-w-lg mx-auto order-1 md:order-2">
+        <img
+          src="/image/story1.webp" 
+          alt="Journey to Transform Recruitment"
+          className="rounded-2xl object-cover w-full h-full"
+        />
+      </div>
+      <div className="p-6 order-2 md:order-1">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">
+          The Journey to Transform Recruitment
+        </h2>
+        <p className="text-base sm:text-lg text-gray-600 text-justify">
+          Everything Talent was founded with a vision to transform the way organizations approach hiring. 
+          Frustrated by traditional, cumbersome methods of recruiting and recognizing the potential for 
+          bias in evaluating candidates, our founder set out to create a solution that simplifies the 
+          hiring journey while leveraging the latest advancements in technology.
         </p>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10">
-        <div className="p-6">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">
-            The Journey to Transform Recruitment
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 text-justify">
-            Everything Talent was founded with a vision to transform the way organizations approach hiring. 
-            Frustrated by traditional, cumbersome methods of recruiting and recognizing the potential for 
-            bias in evaluating candidates, our founder set out to create a solution that simplifies the 
-            hiring journey while leveraging the latest advancements in technology.
-          </p>
-        </div>
-        <div className="max-w-lg mx-auto">
-          <img
-            src="/image/story1.webp" 
-            alt="Journey to Transform Recruitment"
-            className="rounded-2xl object-cover w-full h-full"
-          />
-        </div>
+    </div>
+  
+    {/* Section 2 */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10 mt-8">
+      <div className="max-w-lg mx-auto order-1">
+        <img 
+          src="/image/story_2.webp" 
+          alt="Combining Innovation" 
+          className="rounded-2xl object-cover w-full h-full"
+        />
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10 mt-8">
-        <div className="max-w-lg mx-auto">
-          <img 
-            src="/image/story_2.webp" 
-            alt="Combining Innovation" 
-            className="rounded-2xl object-cover w-full h-full"
-          />
-        </div>
-        
-        <div className="p-6">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">
-            Combining Innovation with Efficiency
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 text-justify">
-            Our platform combines a free Applicant Tracking System (ATS) with AI-driven tech assessments. 
-            This allows you to evaluate candidates quickly and accurately, regardless of their background 
-            or the complexity of the role. We are committed to leveraging the latest technology to streamline 
-            the recruitment process and reduce bias.
-          </p>
-        </div>
+      <div className="p-6 order-2">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">
+          Combining Innovation with Efficiency
+        </h2>
+        <p className="text-base sm:text-lg text-gray-600 text-justify">
+          Our platform combines a free Applicant Tracking System (ATS) with AI-driven tech assessments. 
+          This allows you to evaluate candidates quickly and accurately, regardless of their background 
+          or the complexity of the role. We are committed to leveraging the latest technology to streamline 
+          the recruitment process and reduce bias.
+        </p>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10 mt-8">
-        <div className="p-6">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">The Journey to Transform Recruitment</h2>
-          <p className="text-base sm:text-lg text-gray-600 text-justify">
-            Everything Talent was founded with a vision to transform the way organizations approach hiring.
-            Frustrated by traditional, cumbersome methods of recruiting and recognizing the potential for bias
-            in evaluating candidates, our founder set out to create a solution that simplifies the hiring journey
-            while leveraging the latest advancements in technology.
-          </p>
-        </div>
-        <div className="max-w-lg mx-auto">
-          <img
-            src="/image/story_3.webp"
-            alt="Journey to Transform Recruitment"
-            className="rounded-2xl object-cover w-full h-full"
-          />
-        </div>
+    </div>
+  
+    {/* Section 3 */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10 mt-8">
+      <div className="max-w-lg mx-auto order-1 md:order-2">
+        <img
+          src="/image/story_3.webp"
+          alt="Journey to Transform Recruitment"
+          className="rounded-2xl object-cover w-full h-full"
+        />
       </div>
-    </section>
+      <div className="p-6 order-2 md:order-1">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">The Journey to Transform Recruitment</h2>
+        <p className="text-base sm:text-lg text-gray-600 text-justify">
+          Everything Talent was founded with a vision to transform the way organizations approach hiring.
+          Frustrated by traditional, cumbersome methods of recruiting and recognizing the potential for bias
+          in evaluating candidates, our founder set out to create a solution that simplifies the hiring journey
+          while leveraging the latest advancements in technology.
+        </p>
+      </div>
+    </div>
+  </section>
+  
   );
 };
 
@@ -273,8 +272,271 @@ const ValuesSection: React.FC = () => {
 };
 
 
-// Hero Section Component
 
+
+// Expert team start
+
+const teamMembers = [
+  { name: 'Amit verma', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Fin2.jpg&w=96&q=75' },
+  { name: 'Nisha Rao', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Famf2.jpg&w=96&q=75' },
+  { name: 'Benjamin Harries', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Fam3.jpg&w=96&q=75' },
+  { name: 'olivia Brown', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Finf4.jpg&w=96&q=75' },
+  { name: 'Rajesh Kannan', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Fin3.jpg&w=96&q=75' },
+  { name: 'Aditi Dhah', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Finf5.jpg&w=96&q=75' },
+  { name: 'priya Desai', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Famf3.jpg&w=96&q=75' },
+  { name: 'Robart Tylor', imageUrl: 'https://everythingtalent.ai/_next/image?url=%2Fassets%2Fabout-us%2Four-team%2Fam5.jpg&w=96&q=75' },
+];
+
+const Team: React.FC = () => {
+  return (
+    <div className="flex flex-col items-center text-center py-16 px-4">
+      <h2 className="text-3xl font-bold mb-4">Our Experts Team</h2>
+      <p className="text-gray-700 max-w-xl mb-8">
+        At Everything Talent, our innovative team develops AI-driven assessments and an advanced ATS to modernize hiring. 
+        We focus on reducing bias, making recruitment efficient, and providing accessible tools for companies of all sizes to attract top talent.
+      </p>
+      <div className="flex flex-wrap justify-center gap-8">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <img
+              src={member.imageUrl}
+              alt={member.name}
+              className="w-24 h-24 rounded-full object-cover shadow-lg transition-transform duration-300 hover:scale-105"
+            />
+            <span className="mt-2 text-sm font-semibold">{member.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+// Expert team end
+
+// Journey Section start
+
+
+const JourneySection = () => {
+  return (
+    <div>
+      <div className="w-full px-28 bg-white border-white dark:bg-neutral-950 pt-8 md:py-16">
+        {/* <!-- Container for the journey section --> */}
+        <div className="flex justify-center md:container px-4 sm:px-6 mb-6 md:mb-40">
+          {/* <!-- Text container for heading and description --> */}
+          <div className="text-center md:w-[80vw]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Journey</h2>
+            <p className="text-xl opacity-80 mb-4">
+              Since our founding in 2021, Arctic Wolf has risen to the rank of
+              market leader in security operations, adding thousands of
+              employees and customers, as well as a trophy case of awards along
+              the way.
+            </p>
+          </div>
+        </div>
+
+        {/* <!-- Timeline container --> */}
+        <div className="w-full pr-20 border-2 bg-white dark:bg-neutral-950 md:container px-4 sm:px-6">
+          <div className="relative mx-auto flex">
+            <div className="flex flex-col w-full gap-0">
+              {/* <!-- Timeline event (repeated block) --> */}
+              <div className="relative -mt-20 flex justify-start w-1/2 flex-col">
+                {/* <!-- Sticky label for each event --> */}
+                <div className="sticky flex flex-col items-end border py-2 z-10 top-60 self-end bg-gradient-to-r from-[#003f6c] via-[#61beef] to-[#00aaff] dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] rotate-180">
+                  <div className="h-14 w-14 absolute -left-[15%] -top-4 flex self-end rounded-full bg-sky-500 items-center justify-center dark:bg-sky-500">
+                    <div className="h-12 w-12 rounded-full bg-black border border-blue-500 flex items-center justify-center dark:border-neutral-700">
+                      <span className="text-white">
+                        {/* <!-- SVG Icon --> */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-white dark:text-sky-500"
+                        >
+                          <path d="M12 16v5"></path>
+                          <path d="M16 14v7"></path>
+                          <path d="M20 10v11"></path>
+                          <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"></path>
+                          <path d="M4 18v3"></path>
+                          <path d="M8 14v7"></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="w-48"></h3>
+                </div>
+
+                <div className="relative -mt-6 flex h-fit md:w-[90%] lg:w-[80%] justify-end z-20">
+                  <div className="relative border border-blue-300 dark:border-[#3577f39a] py-4 px-8 max-w-[24rem] bg-gradient-to-br from-black via-violet-900 to-violet-500 dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] transition-all duration-500 shadow-lg hover:shadow-[0_4px_8px_0_rgba(75,0,130,0.5)] rounded-lg">
+                    <p className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 dark:bg-[linear-gradient(to_right,_#3c3cbf_0%,_#FFFFFF_50%)] font-bold text-xl">
+                      Aug 2021
+                    </p>
+                    <div>
+                      <img
+                        alt="IDC Names Arctic Wolf a Leader"
+                        className="rounded-lg border max-h-[212px] w-[317px] h-full"
+                        src="https://everythingtalent.ai/_next/image?url=%2Fassets%2Fhome%2Fai1.jpg&w=256&q=75"
+                      />
+                    </div>
+                    <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
+                      IDC Names Arctic Wolf a Leader
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                      >
+                        <path d="M3.33946 "></path>
+                        <path d="2.58277"></path>
+                      </svg>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              {/* 2 */}
+
+              <div className="relative -mt-20 flex justify-end w-1/2 flex-col self-end">
+                {/* <!-- Sticky label for each event --> */}
+                <div className="sticky flex flex-col items-start self-start border py-2 z-10 top-60  bg-gradient-to-r from-[#003f6c] via-[#61beef] to-[#00aaff] dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] ">
+                  <div className="h-14 w-14 absolute -left-[14%] -top-4 flex  rounded-full bg-sky-500 items-center justify-center dark:bg-sky-500">
+                    <div className="h-12 w-12 rounded-full bg-black border border-blue-500 flex items-center justify-center dark:border-neutral-700">
+                      <span className="text-white">
+                        {/* <!-- SVG Icon --> */}
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M3.33946 17.0002C2.90721 16.2515 2.58277 15.4702 2.36133 14.6741C3.3338 14.1779 3.99972 13.1668 3.99972 12.0002C3.99972 10.8345 3.3348 9.824 2.36353 9.32741C2.81025 7.71651 3.65857 6.21627 4.86474 4.99001C5.7807 5.58416 6.98935 5.65534 7.99972 5.072C9.01009 4.48866 9.55277 3.40635 9.4962 2.31604C11.1613 1.8846 12.8847 1.90004 14.5031 2.31862C14.4475 3.40806 14.9901 4.48912 15.9997 5.072C17.0101 5.65532 18.2187 5.58416 19.1346 4.99007C19.7133 5.57986 20.2277 6.25151 20.66 7.00021C21.0922 7.7489 21.4167 8.53025 21.6381 9.32628C20.6656 9.82247 19.9997 10.8336 19.9997 12.0002C19.9997 13.166 20.6646 14.1764 21.6359 14.673C21.1892 16.2839 20.3409 17.7841 19.1347 19.0104C18.2187 18.4163 17.0101 18.3451 15.9997 18.9284C14.9893 19.5117 14.4467 20.5941 14.5032 21.6844C12.8382 22.1158 11.1148 22.1004 9.49633 21.6818C9.55191 20.5923 9.00929 19.5113 7.99972 18.9284C6.98938 18.3451 5.78079 18.4162 4.86484 19.0103C4.28617 18.4205 3.77172 17.7489 3.33946 17.0002ZM8.99972 17.1964C10.0911 17.8265 10.8749 18.8227 11.2503 19.9659C11.7486 20.0133 12.2502 20.014 12.7486 19.9675C13.1238 18.8237 13.9078 17.8268 14.9997 17.1964C16.0916 16.5659 17.347 16.3855 18.5252 16.6324C18.8146 16.224 19.0648 15.7892 19.2729 15.334C18.4706 14.4373 17.9997 13.2604 17.9997 12.0002C17.9997 10.74 18.4706 9.5632 19.2729 8.6665C19.1688 8.4405 19.0538 8.21822 18.9279 8.00021C18.802 7.78219 18.667 7.57148 18.5233 7.36842C17.3457 7.61476 16.0911 7.43414 14.9997 6.80405C13.9083 6.17395 13.1246 5.17768 12.7491 4.03455C12.2509 3.98714 11.7492 3.98646 11.2509 4.03292C10.8756 5.17671 10.0916 6.17364 8.99972 6.80405C7.9078 7.43447 6.65245 7.61494 5.47428 7.36803C5.18485 7.77641 4.93463 8.21117 4.72656 8.66637C5.52881 9.56311 5.99972 10.74 5.99972 12.0002C5.99972 13.2604 5.52883 14.4372 4.72656 15.3339C4.83067 15.5599 4.94564 15.7822 5.07152 16.0002C5.19739 16.2182 5.3324 16.4289 5.47612 16.632C6.65377 16.3857 7.90838 16.5663 8.99972 17.1964ZM11.9997 15.0002C10.3429 15.0002 8.99972 13.6571 8.99972 12.0002C8.99972 10.3434 10.3429 9.00021 11.9997 9.00021C13.6566 9.00021 14.9997 10.3434 14.9997 12.0002C14.9997 13.6571 13.6566 15.0002 11.9997 15.0002ZM11.9997 13.0002C12.552 13.0002 12.9997 12.5525 12.9997 12.0002C12.9997 11.4479 12.552 11.0002 11.9997 11.0002C11.4474 11.0002 10.9997 11.4479 10.9997 12.0002C10.9997 12.5525 11.4474 13.0002 11.9997 13.0002Z"></path></svg>
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="w-48"></h3>
+                </div>
+
+                <div className="relative -mt-6 flex h-fit md:w-[90%] lg:w-[80%] justify-end z-20">
+                  <div className="relative border border-blue-300 dark:border-[#3577f39a] py-4 px-8 max-w-[24rem] bg-gradient-to-br from-black via-violet-900 to-violet-500 dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] transition-all duration-500 shadow-lg hover:shadow-[0_4px_8px_0_rgba(75,0,130,0.5)] rounded-lg">
+                    <p className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 dark:bg-[linear-gradient(to_right,_#3c3cbf_0%,_#FFFFFF_50%)] font-bold text-xl">
+                      Feb 2022
+                    </p>
+                    <div>
+                      <img
+                        alt="Arctic Wolf Incident Launch"
+                        className="rounded-lg border max-h-[212px] w-[317px] h-full"
+                        src="https://everythingtalent.ai/_next/image?url=%2Fassets%2Fhome%2Ftools.jpg&w=256&q=75"
+                      />
+                    </div>
+                    <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
+                      Arctic Wolf Incident Launch
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                      ></svg>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              {/* 3 */}
+
+              <div className="relative -mt-20 flex justify-start w-1/2 flex-col ">
+                {/* <!-- Sticky label for each event --> */}
+                <div className="sticky flex flex-col items-end  border py-2 z-10 top-60 self-end bg-gradient-to-r from-[#003f6c] via-[#61beef] to-[#00aaff] dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] rotate-180">
+                  <div className="h-14 w-14 absolute -left-[15%] -top-4 flex self-end rounded-full bg-sky-500 items-center justify-center dark:bg-sky-500">
+                    <div className="h-12 w-12 rounded-full bg-black border border-blue-500 flex items-center justify-center dark:border-neutral-700">
+                      <span className="text-white">
+                        {/* <!-- SVG Icon --> */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M6 18H18V6H6V18ZM14 20H10V22H8V20H5C4.44772 20 4 19.5523 4 19V16H2V14H4V10H2V8H4V5C4 4.44772 4.44772 4 5 4H8V2H10V4H14V2H16V4H19C19.5523 4 20 4.44772 20 5V8H22V10H20V14H22V16H20V19C20 19.5523 19.5523 20 19 20H16V22H14V20ZM8 8H16V16H8V8Z"></path></svg>
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="w-48"></h3>
+                </div>
+
+                <div className="relative -mt-6 flex h-fit md:w-[90%] lg:w-[80%] justify-end z-20">
+                  <div className="relative border border-blue-300 dark:border-[#3577f39a] py-4 px-8 max-w-[24rem] bg-gradient-to-br from-black via-violet-900 to-violet-500 dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] transition-all duration-500 shadow-lg hover:shadow-[0_4px_8px_0_rgba(75,0,130,0.5)] rounded-lg">
+                    <p className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 dark:bg-[linear-gradient(to_right,_#3c3cbf_0%,_#FFFFFF_50%)] font-bold text-xl">
+                      Oct 2022
+                    </p>
+                    <div>
+                      <img
+                        alt="Arctic Wolf Expands to ANZ"
+                        className="rounded-lg border max-h-[212px] w-[317px] h-full"
+                        src="https://everythingtalent.ai/_next/image?url=%2Fassets%2Fhome%2Fai2.jpg&w=256&q=75"
+                      />
+                    </div>
+                    <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
+                      Arctic Wolf Expands to ANZ
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-white dark:text-sky-500"
+                      ></svg>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              {/* 4 */}
+
+              <div className="relative -mt-20 flex justify-start w-1/2 flex-col self-end">
+                {/* <!-- Sticky label for each event --> */}
+                <div className="sticky flex flex-col items-end self-start border py-2 z-10 top-60 bg-gradient-to-r from-[#003f6c] via-[#61beef] to-[#00aaff] dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] ">
+                  <div className="h-14 w-14 absolute -left-[14%] -top-4 flex self-end rounded-full bg-sky-500 items-center justify-center dark:bg-sky-500">
+                    <div className="h-12 w-12 rounded-full bg-black border border-blue-500 flex items-center justify-center dark:border-neutral-700">
+                      <span className="text-white">
+                        {/* <!-- SVG Icon --> */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M4.87759 3.00275H19.1319C19.4518 3.00275 19.7524 3.15583 19.9406 3.41457L23.7634 8.67097C23.9037 8.86385 23.8882 9.12895 23.7265 9.30419L12.3721 21.6047C12.1848 21.8076 11.8685 21.8203 11.6656 21.633C11.6591 21.627 7.86486 17.5174 0.282992 9.30419C0.121226 9.12895 0.10575 8.86385 0.246026 8.67097L4.06886 3.41457C4.25704 3.15583 4.55766 3.00275 4.87759 3.00275ZM5.38682 5.00275L2.58738 8.85198L12.0047 19.0541L21.4221 8.85198L18.6226 5.00275H5.38682Z"></path></svg>
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="w-48"></h3>
+                </div>
+
+                <div className="relative -mt-6 flex h-fit md:w-[90%] lg:w-[80%] justify-end z-20">
+                  <div className="relative border border-blue-300 dark:border-[#3577f39a] py-4 px-8 max-w-[24rem] bg-gradient-to-br from-black via-violet-900 to-violet-500 dark:bg-gradient-to-b dark:from-[#000] dark:to-[#120a1d] transition-all duration-500 shadow-lg hover:shadow-[0_4px_8px_0_rgba(75,0,130,0.5)] rounded-lg">
+                    <p className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 dark:bg-[linear-gradient(to_right,_#3c3cbf_0%,_#FFFFFF_50%)] font-bold text-xl">
+                      May 2023
+                    </p>
+                    <div>
+                      <img
+                        alt="IDC Names Arctic Wolf a Leader"
+                        className="rounded-lg border max-h-[212px] w-[317px] h-full"
+                        src="https://everythingtalent.ai/_next/image?url=%2Fassets%2Fhome%2Farticle.jpg&w=256&q=75"
+                      />
+                    </div>
+                    <h3 className="text-[16px] flex gap-2 items-center font-bold text-white dark:text-gray-300 mt-2">
+                      Arctic Wolf on CNBC Disruptor 50
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                      ></svg>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute -mt-40 left-1/2 transform -translate-x-1/2 top-0 w-4 h-[calc(100%+10rem)] bg-gradient-to-r from-black via-violet-950 to-violet-800 dark:bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] dark:from-transparent dark:from-[0%] dark:via-purple-400 dark:to-transparent dark:to-[99%] mask-image-[linear-gradient(to_bottom,transparent_0%,black_1%,black_99%,transparent_100%)]">
+              <div className="absolute inset-x-0 top-8 w-4 bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-sm"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Journey Section end
 
 
 
@@ -385,6 +647,9 @@ export default function Home() {
       <HeroSection />
       <StorySection />
       <ValuesSection/>
+      <teamMembers/>
+      <Team/>
+      <JourneySection/>
       <Footer/>
       <SkylineFooter/>
     </main>
